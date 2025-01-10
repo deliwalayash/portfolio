@@ -45,12 +45,11 @@ img, svg {
 }
 
 .header {
-    padding: 14px 0;
+    padding: 20px 20px;
     width: 100%;
     z-index: 10;
-    left: 0;
-    right: 0;
-    position: fixed;
+    top: 0;
+    
 }
 
 .ri-menu-line{
@@ -385,15 +384,48 @@ a{
 .section-title-overlay-text {
     color: rgb(var(--black));
     font-family: Poppins;
-
+    font-size: 140px;
     font-style: normal;
     font-weight: 800;
     line-height: 120%;
     text-transform: uppercase;
     opacity: .05;
     position: absolute;
-    text-align: left;
+    /* text-align: left; */
     top: 0;
     left: 0;
 }
 
+main {
+    max-width: 1740px;
+    margin: auto;
+}
+
+.section-title {
+    /* padding-left: 32px; */
+    padding-top: 24px;
+    position: relative;
+    padding-bottom: 20px;
+    --height: 0;
+    margin-bottom: 42px;
+    /* top: 130px; */
+  
+}
+
+.section-title h4 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.section-title h2 {
+    font-size: 80px;
+}
+.about .about-desc h2 {
+    font-size: 40px;
+}
+
+p.desc{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
