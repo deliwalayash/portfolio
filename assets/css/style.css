@@ -76,12 +76,14 @@ img, svg {
     right: 0px;
     left: calc((100% - 1680px) / 2 + 1290px);
     width: 360px;
+
  
 }
 
 .navigation ul{
     width: 300px;
     border-left: 2px solid grey;
+    cursor: pointer;
 }
 
 .nav-link {
@@ -336,7 +338,7 @@ a{
 }
 
 .next-chapter{
-    padding-top: 160px;
+    padding-top: 120px;
 }
 
 .page{
@@ -379,7 +381,7 @@ a{
 }
 
 .about .section-title-overlay-text {
-    top: 80px;
+    top: 70px;
 }
 
 .section-title-overlay-text {
@@ -399,6 +401,7 @@ a{
     /* text-align: left; */
     top: 0;
     left: 0;
+    font-size: 100px;
 }
 
 main {
@@ -460,6 +463,7 @@ p.desc{
     border: 1px solid black;
     transform: rotate(2.5deg);
     z-index: -1;
+    transition: all 0.3s linear;
 }
 .exp-card::after {
     content: "";
@@ -471,6 +475,16 @@ p.desc{
     border: 1px solid black;
     transform: rotate(-2.5deg);
     z-index: -1;
+    transition: all 0.3s linear
+}
+
+.exp-card:hover::after{
+    opacity: 0;
+    visibility: hidden;
+}
+.exp-card:hover::before{
+    opacity: 0;
+    visibility: hidden;
 }
 
 .number{
@@ -501,26 +515,59 @@ p.desc{
   }
 
   .swiper-slide {
-    text-align: center;
     font-size: 18px;
     background: #eee8aa;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+
   }
 
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 
   .service-card{
-    padding: 50px;
+    padding: 40px;
     position: relative;
     border: 1px solid black;
+    
   }
+  .service-card::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
+  }
+
+  .service-card:hover::after{
+    border: 1px solid black;
+    transform: rotate(2.5deg);
+  }
+
+  .service-card::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: all 0.3s linear; 
+
+  }
+
+  .service-card:hover::before{
+    border: 1px solid black;
+    transform: rotate(-2.5deg);
+  }
+
+
 
   .number-circle {
     margin-bottom: 40px;
@@ -603,6 +650,17 @@ p.desc{
         opacity: 0;
     }
     
+}
+
+.content h4{
+    border-bottom: 2px solid black;
+    display: inline-block;
+}
+
+.service-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 
