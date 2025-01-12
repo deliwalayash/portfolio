@@ -404,9 +404,28 @@
                         <div class="col-8">
                             <div class="row">
                                 <div class="col-4">
-                                    <div id="chart">
+                                    <div class="center">
+                                        <div id="chart">
+
+                                        </div>
+                                        <button class="btn btn-design">Design</button>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                   <div class="center">
+                                    <div id="chart1">
 
                                     </div>
+                                    <button class="btn btn-design">Branding</button>
+                                   </div>
+                                </div>
+                                <div class="col-4">
+                                   <div class="center">
+                                    <div id="chart2">
+
+                                    </div>
+                                    <button class="btn btn-design">Ecommerece</button>
+                                   </div>
                                 </div>
                             </div>
                            
@@ -501,8 +520,9 @@
     <script>
         var options = {
             series: [85],
+            colors:['#000000'],
             chart: {
-                height: 350,
+                height: 250,
                 type: 'radialBar',
             },
             plotOptions: {
@@ -512,10 +532,56 @@
                     }
                 },
             },
-            labels: ['Cricket'],
+            labels: ['Design'],
         };
 
         var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+
+    </script>
+    <script>
+        var options = {
+            series: [85],
+            colors:['#000000'],
+            chart: {
+                height: 250,
+                type: 'radialBar',
+            },
+            plotOptions: {
+                radialBar: {
+                    hollow: {
+                        size: '70%',
+                    }
+                },
+            },
+            labels: ['Branding'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart1"), options);
+        chart.render();
+
+
+    </script>
+     <script>
+        var options = {
+            series: [80],
+            colors:['#000000'],
+            chart: {
+                height: 250,
+                type: 'radialBar',
+            },
+            plotOptions: {
+                radialBar: {
+                    hollow: {
+                        size: '70%',
+                    }
+                },
+            },
+            labels: ['Ecommerce'],
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
         chart.render();
 
 
