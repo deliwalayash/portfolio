@@ -51,6 +51,8 @@ img, svg {
     left: 0;
     right: 0;
     position: sticky;
+    top: 0;
+    background-color: #eee8aa;
 }
 
 .ri-menu-line{
