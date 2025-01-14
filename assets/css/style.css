@@ -5,6 +5,7 @@
 *{
     font-family: "Poppins", serif;
     text-decoration: none;
+    list-style: none;
 }
 body {
     margin: 0;
@@ -384,6 +385,7 @@ a{
 .about{
     position: relative;
     z-index: 1;
+    margin-top: 50px;
 }
 
 .about .section-title-overlay-text {
@@ -712,6 +714,7 @@ p.desc{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 500ms;
 }
 
 .project-card::after{
@@ -744,4 +747,79 @@ p.desc{
     border: 1px solid black;
     transform: rotate(-2.5deg);
   }
+
+  .card-img{
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+
+.card-arrow {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   opacity: 0;
+    transition-duration: 500ms;
+
+    
+}
+
+.arrow-inner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #eee8aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ri-arrow-right-up-line{
+    font-size: 25px;
+    color: #212529;
+}
+
+.project-card:hover .card-arrow{
+    opacity: 1;
+    scale: 1.2;
+}
+
+.project-info {
+    margin-top: 32px;
+}
+
+.project-info h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-align: center;
+    color: #212529;
+}
+
+.project-info p {
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: #212529;
+}
+
+.single-project:hover .card-img{
+    scale: 0.99;
+}
+
+.process-list {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
 
