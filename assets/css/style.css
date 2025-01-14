@@ -87,6 +87,10 @@ img, svg {
     border-left: 2px solid grey;
     cursor: pointer;
 }
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
 
 .nav-link {
     display: block;
@@ -383,7 +387,7 @@ a{
 }
 
 .about .section-title-overlay-text {
-    top: 70px;
+    top: -50px;
 }
 
 .section-title-overlay-text {
@@ -418,6 +422,8 @@ main {
     padding-bottom: 20px;
     --height: 0;
     margin-bottom: 42px;
+    border-left: 2px dashed black;
+    padding-left: 30px;
     /* top: 130px; */
   
 }
@@ -677,6 +683,65 @@ p.desc{
     border-radius: 20px;
     padding: 10px 48px;
     border: 1px solid black;
+    transition: all 0.3s linear;
+    font-size: 18px;
+    font-weight: 600;
 }
 
+.progress {
+    height: 3px;
+    margin-top: 8px;
+    background-color: white;
+    
+}
+
+.progress-bar{
+    background-color: #000000;
+}
+
+.skill span{
+    font-size: 16px;
+}
+
+.btn-design:hover{
+    background-color: black;
+    color: white;
+}
+.project-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
+  }
+
+  .project-card:hover::after{
+    border: 1px solid black;
+    transform: rotate(2.5deg);
+  }
+
+  .project-card::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    transition: all 0.3s linear; 
+
+  }
+
+  .project-card:hover::before{
+    border: 1px solid black;
+    transform: rotate(-2.5deg);
+  }
 
