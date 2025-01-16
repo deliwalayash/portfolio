@@ -10,7 +10,11 @@
         margin-top: 50px;
     }
 
-    .whatsapp-btn{
+    /* .whatsapp-btn{
+        display: none;
+    } */
+
+    .section-title-overlay-text{
         display: none;
     }
 }
