@@ -107,6 +107,7 @@ section {
     color: black;
     margin-right: 10px;
 }
+
 a{
     text-decoration: none;
 }
@@ -922,6 +923,10 @@ p.desc{
 }
 .whatsapp-btn:hover{
     scale: 1.25;
+}
+
+.review-img{
+    border-radius: 50%;
 }
 
 
