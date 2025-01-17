@@ -937,4 +937,18 @@ p.desc{
     background-color: #000000;
 }
 
+.blog-card {
+    display: flex;
+    background-color: rgba(255,255,255, 0.1);
+    align-items: center;
+    transition-duration: 300ms;
+    gap: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0, 0.1);
+}
+
+
+
+
 
