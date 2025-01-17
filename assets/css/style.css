@@ -391,6 +391,10 @@ a{
     margin-top: 50px;
 }
 
+.c-pointer {
+    cursor: pointer;
+}
+
 .about .section-title-overlay-text {
     top: -50px;
 }
@@ -927,6 +931,10 @@ p.desc{
 
 .review-img{
     border-radius: 50%;
+}
+
+.swiper-pagination span{
+    background-color: #000000;
 }
 
 

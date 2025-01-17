@@ -790,7 +790,7 @@ progress {
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-right: auto;
     margin-left: auto;
-    
+
 }
 
 @media (min-width:576px) {
@@ -874,6 +874,7 @@ progress {
 .col {
     flex: 1 0 0%
 }
+
 
 .row-cols-auto>* {
     flex: 0 0 auto;
