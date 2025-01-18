@@ -104,6 +104,12 @@
                             <span class="text">BLOGS</span>
                         </a>
                     </li>
+                    <li class="dec-text mt-2">
+                        <a href="#contact">
+                            <span>09</span>
+                            <span class="text">CONTACT</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -1113,7 +1119,7 @@
 
                     </section>
 
-                    <section id="#contact" class="about">
+                    <section id="contact" class="about">
                         <span class="section-title-overlay-text"
                         style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 9.1716%, 0px);">
                         Contact
@@ -1123,7 +1129,7 @@
                         <h2>Conact Me</h2>
                     </div>
 
-                    <div class="row pb-120 contact-items">
+                    <div class=" pb-120 contact-items">
                         <div class="row g-4">
                             <div class="col-sm-6 col-xl-4 col-xxl-3">
                               <div class="d-flex align-items-center gap-4">
@@ -1155,10 +1161,22 @@
 
                               </div>
                             </div>
-                            <div class="col-sm-6 col-xl-4 col-xxl-3 d-flex align-items-center">
-                                <div class="d-flex gap-3 social-icon">
+                            <div class="col-sm-6 col-xl-4 col-xxl-3 d-flex align-items-center gap-3">
+                                <div class="d-flex gap-3 social-icons">
                                     <a href="">
                                         <i class="ri-linkedin-fill"></i>
+                                    </a>
+
+                                </div>
+                                <div class="d-flex gap-3 social-icons">
+                                    <a href="">
+                                        <i class="ri-twitter-x-line"></i>
+                                    </a>
+
+                                </div>
+                                <div class="d-flex gap-3 social-icons">
+                                    <a href="">
+                                        <i class="ri-twitter-x-line"></i>
                                     </a>
 
                                 </div>
@@ -1168,6 +1186,32 @@
                         </div>
 
                     </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <h4>Leave a Message</h4>
+                        <input type="hidden" name="access_key" value="e83cda7f-6124-4092-b148-e3f6db00bd70">
+                        <div class="row g-4 g-xl-5">
+                            <div class="col-sm-6">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" placeholder="Your Name" id="name">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="email">Email</label>
+                                <input type="email" name="name" placeholder="Your Email" id="email">
+                            </div>
+                            <div class="col-12">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" placeholder="your message"></textarea>
+
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" id="submit-btn" class="submit-btn position-relative">
+                                    Submit
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
 
                     </section>
 
