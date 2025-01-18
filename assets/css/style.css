@@ -1248,6 +1248,14 @@ margin-right: 6px;
 .offcanvas-body a{
     color: #000000;
     font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.btn-close{
+    border: 1px solid black;
+    color: #000000;
+    padding: 5px;
 }
 
 
