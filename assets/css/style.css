@@ -28,6 +28,9 @@ canvas {
     --primary-blue:#00ffff;
     --primary-green:#00fe9c;
     --primary-orange:#fdbb2e;
+    --primary-red:rgb(220, 132, 132);
+    --primary-grey:rgb(171, 156, 156);
+    --primary-coral:rgb(240, 148, 114);
     
 }
 
@@ -984,6 +987,7 @@ p.desc{
     justify-content: center;
     background-color: white;
     font-size: 25px;
+  
     
 }
 
@@ -1256,6 +1260,10 @@ margin-right: 6px;
     border: 1px solid black;
     color: #000000;
     padding: 5px;
+}
+
+.ri-menu-line{
+    color: black;
 }
 
 

@@ -225,7 +225,7 @@
 
         <div class="color-switcher">
             <button class="color-switcher-btn">
-                <i class="ri-settings-5-line"></i>
+                <i class="ri-settings-4-line"></i>
             </button>
             <div class="pallets d-flex flex-column align-items-center gap-4 justify-content-center">
                 <div class="d-flex flex-column gap-3">
@@ -250,6 +250,18 @@
 
                         </button>
                         <button style="background-color: #00fe9c" class="color-btn btn-green">
+
+                        </button>
+
+                    </div>
+                    <div class="d-flex gap-3">
+                        <button style="background-color: #dc8484" class="color-btn btn-red">
+
+                        </button>
+                        <button style="background-color: #ab9c9c" class="color-btn btn-grey">
+
+                        </button>
+                        <button style="background-color: #f09472" class="color-btn btn-coral">
 
                         </button>
 
@@ -1446,6 +1458,18 @@
                 $("#particles-js").css('background-color', 'var(--primary-blue)')
                 $('.header').css('background-color', 'var(--primary-blue)')
             })
+            $(".btn-red").on('click', function () {
+                $("#particles-js").css('background-color', 'var(--primary-red)')
+                $('.header').css('background-color', 'var(--primary-red)')
+            })
+            $(".btn-grey").on('click', function () {
+                $("#particles-js").css('background-color', 'var(--primary-grey)')
+                $('.header').css('background-color', 'var(--primary-grey)')
+            })
+            $(".btn-coral").on('click', function () {
+                $("#particles-js").css('background-color', 'var(--primary-coral)')
+                $('.header').css('background-color', 'var(--primary-coral)')
+            })
         })
     </script>
 
@@ -1454,6 +1478,14 @@
     <script>
         AOS.init();
     </script>
+   <script>
+    AOS.init({
+  disable: function () {
+    // Disable AOS for screens smaller than 768px
+    return window.innerWidth < 768;
+  },
+});
+   </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
