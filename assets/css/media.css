@@ -18,6 +18,14 @@
     .section-title-overlay-text{
         display: none;
     }
+
+    .icon-box{
+        border: none;
+    }
+
+    .social-icons a{
+        border: none;
+    }
     
 }
 

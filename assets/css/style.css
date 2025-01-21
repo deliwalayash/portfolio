@@ -360,7 +360,7 @@ a{
 }
 
 .next-chapter{
-    padding-top: 120px;
+    padding-top: 80px;
 }
 
 .page{
@@ -1034,8 +1034,8 @@ p.desc{
 }
 
 .icon-box {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 1px solid var(--black);
     display: flex;
@@ -1265,6 +1265,24 @@ margin-right: 6px;
 .ri-menu-line{
     color: black;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+  .wrapper > * {
+    padding: 5px 20px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  .pg-bar span{
+    font-weight: 600;
+  }
+  
 
 
 
