@@ -48,4 +48,9 @@
     .wrapper{
         display: none;
     }
+
+    .animatedText{
+      font-size: 40px;
+      border: none;
+    }
   }
