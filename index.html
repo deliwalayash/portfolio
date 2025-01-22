@@ -161,20 +161,22 @@
 </div>
 
     <!-- pre loader -->
-    <!-- <div class="loader-container" id="loader-container">
-        <div class="loading-wrapper">
-            <div class="image-wrap loader-img-animation" id="loader-animation">
-                <img src="./assets/images/yash-3.jpeg" alt="yashdeliwala">
-            </div>
-            <div class="loader-name loader-name-animation " id="loader-name"><strong>Yash Deliwala</strong></div>
-            <p class="loader-job loader-job-animation" id="loader-job">MERN Stack Developer</p>
-            <div class="social-profile">
-                <a href="https://www.facebook.com/suremarketingg" target="_blank">Facebook</a>
-                <a href="https://github.com/deliwalayash" target="_blank">Github</a>
-                
-            </div>
+
+    <div id="preloader">
+        <div class="bar-container">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-    </div> -->
+        <h1 class="color-white">Loading...</h1>
+      </div>
+    
+     
+    </body>
+    </html>
+    
 
     <!-- navigation -->
 
@@ -1382,7 +1384,7 @@
 
 
     <script src="./assets/js/bootstrap.bundle.js"></script>
-
+    <script src="script.js"></script>
 
 
     <script>
@@ -1464,7 +1466,7 @@
     <script>
         $(document).ready(function () {
             $(window).on('load', function () {
-                $(".loader-container").delay(3000).fadeOut();
+                $("#preloader").delay(2000).fadeOut();
             });
             $(".color-switcher-btn").on("click", function () {
                 $(".color-switcher").toggleClass("opened")
