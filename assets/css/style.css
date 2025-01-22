@@ -1291,6 +1291,16 @@ margin-right: 6px;
   .color-white{
     color: white;
   }
+
+  input{
+    font-size: 20px;
+  }
+
+  textarea{
+    font-size: 20px;
+  }
+
+  
   
 
 
